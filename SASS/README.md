@@ -1,1 +1,1 @@
-This repository is for example SASS projects
+This repository is for example SASS projects.
