@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# Colours and background variables
+--------------------------------------------------------------*/
+
+$primary-color: #EF6638; /*Orange*/
+
+$fore-primary-color:black;
+$fore-secondary-color:white;
+
+$bg-silver-color:rgba(236, 236, 236, 0.94);
+$bg-white-color:#ffffff;
+
+
+/*--------------------------------------------------------------
+# Generic Functions
+--------------------------------------------------------------*/
+@mixin verticalAlign($align-percent) {
+   position: relative;
+   top: $align-percent;
+   transform: translateY(-$align-percent);
+}
+
+@mixin hdrTopMargin($marginTop:""){
+   @if $marginTop != ""{
+      margin-top:#{$marginTop}px;
+   }
+}

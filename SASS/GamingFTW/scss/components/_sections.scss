@@ -1,0 +1,19 @@
+/*--------------------------------------------------------------
+# Page splitters
+--------------------------------------------------------------*/
+main section.pagesplit{
+   padding:30px 0px; 
+}
+section.pagesplit.top{
+   @extend .bg-silver-color;
+   padding-top:90px;
+}
+
+section.testimonial{
+   text-align: right;
+   font-size:1.8em;
+   color:white;
+   border-bottom:7px solid darken($primary-color, 30%);
+   background:$primary-color;   
+}
+

@@ -1,0 +1,85 @@
+/*--------------------------------------------------------------
+# Colours and background variables
+--------------------------------------------------------------*/
+/*Orange*/
+/*--------------------------------------------------------------
+# Generic Functions
+--------------------------------------------------------------*/
+/* line 3, ../../scss/pages/about.scss */
+section.aboutCompany {
+  /*--------------------------------------------------------------
+  # Left content - Carousel with images
+  --------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  # Right content - More about with bootstrap tablist
+  --------------------------------------------------------------*/
+}
+/* line 7, ../../scss/pages/about.scss */
+section.aboutCompany .carousel-caption {
+  background: rgba(0, 0, 0, 0.54);
+  border-radius: 6px;
+  top: -1px;
+  padding: 10px 0px;
+  bottom: auto;
+}
+/* line 18, ../../scss/pages/about.scss */
+section.aboutCompany .moreAbout {
+  /* Active links */
+  /* Inactive links */
+  /* Content pane */
+}
+/* line 20, ../../scss/pages/about.scss */
+section.aboutCompany .moreAbout .nav-tabs > li.active > a, section.aboutCompany .moreAbout .nav-tabs > li.active > a:focus {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #a75108 #a75108 transparent;
+  background: #ef6638;
+  color: white;
+}
+/* line 28, ../../scss/pages/about.scss */
+section.aboutCompany .moreAbout .nav-tabs > li > a {
+  text-decoration: none;
+  color: #ef6638;
+}
+/* line 32, ../../scss/pages/about.scss */
+section.aboutCompany .moreAbout .nav-tabs > li > a:hover {
+  text-decoration: underline;
+}
+/* line 37, ../../scss/pages/about.scss */
+section.aboutCompany .moreAbout .tab-pane {
+  color: white;
+  background: #ef6638;
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+/*--------------------------------------------------------------
+# Testimonial area
+--------------------------------------------------------------*/
+/* line 50, ../../scss/pages/about.scss */
+section.testimonial q {
+  line-height: 42.1px;
+}
+/* line 52, ../../scss/pages/about.scss */
+section.testimonial q:before, section.testimonial q:after {
+  font-size: 2em;
+  vertical-align: middle;
+}
+/* line 56, ../../scss/pages/about.scss */
+section.testimonial q:before {
+  margin-right: 10px;
+}
+/* line 57, ../../scss/pages/about.scss */
+section.testimonial q:after {
+  margin-left: 10px;
+}
+/* line 60, ../../scss/pages/about.scss */
+section.testimonial .quoteBox {
+  border-right: 5px solid white;
+  padding-right: 25px;
+}
+/* line 64, ../../scss/pages/about.scss */
+section.testimonial footer {
+  font-style: italic;
+  font-size: 0.6em;
+}

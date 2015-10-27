@@ -1,0 +1,34 @@
+
+/*--------------------------------------------------------------
+# Main blocks
+--------------------------------------------------------------*/
+
+/* Placeholders */
+%blocks_alternating{   
+   .col-md-4, .col-md-3{
+      text-align: center;
+      &:nth-child(odd){background:$bg-silver-color;}
+      &:nth-child(even){background:$bg-white-color;}
+   }
+}
+
+/* Blocks with icons */
+.blocks_alt_icon{
+   @extend %blocks_alternating;
+   
+   .innerPad{padding:15px;}   
+   figure{
+      margin:0px auto;
+      border-radius: 5px;
+      width:70px; height:70px;
+      background:$primary-color;
+      color:white; font-size: 2.5em;
+   }
+}
+
+/* Blocks with images */
+.blocks_alt_img{
+   @extend %blocks_alternating;   
+   
+   .innerPad{padding:7px;} 
+}

@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+/*--------------------------------------------------------------
+# Colours and background variables
+--------------------------------------------------------------*/
+/*Orange*/
+/*--------------------------------------------------------------
+# Generic Functions
+--------------------------------------------------------------*/
+/* line 1, ../scss/base/_base.scss */
+body {
+  color: black;
+}
+
+/*--------------------------------------------------------------
+# Links
+--------------------------------------------------------------*/
+/* line 8, ../scss/base/_base.scss */
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+/* line 10, ../scss/base/_base.scss */
+a:hover {
+  color: white;
+}
+
+/* line 14, ../scss/base/_base.scss */
+a.btn {
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Backgrounds
+--------------------------------------------------------------*/
+/* line 19, ../scss/base/_base.scss */
+main section.bg-silver-color, main section.pagesplit.top {
+  background: rgba(236, 236, 236, 0.94);
+}
+
+/* line 22, ../scss/base/_base.scss */
+main section.primary-color {
+  background: #ef6638;
+}
+
+/*--------------------------------------------------------------
+# Headings
+--------------------------------------------------------------*/
+/* line 29, ../scss/base/_base.scss */
+.page-header {
+  border-bottom: 1px solid #ef6638;
+}
+
+/* line 30, ../scss/base/_base.scss */
+.page-header.noTopMarg {
+  margin-top: 0px;
+}
+
+/*--------------------------------------------------------------
+# Media queries
+--------------------------------------------------------------*/
+@media only screen and (max-width: 992px) {
+  /* line 38, ../scss/base/_base.scss */
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11,
+  .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+  .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    margin-top: 40px;
+  }
+  /* line 42, ../scss/base/_base.scss */
+  .col-lg-1:first-child, .col-lg-10:first-child, .col-lg-11:first-child, .col-lg-12:first-child, .col-lg-2:first-child, .col-lg-3:first-child, .col-lg-4:first-child, .col-lg-5:first-child, .col-lg-6:first-child, .col-lg-7:first-child, .col-lg-8:first-child, .col-lg-9:first-child, .col-md-1:first-child, .col-md-10:first-child, .col-md-11:first-child,
+  .col-md-12:first-child, .col-md-2:first-child, .col-md-3:first-child, .col-md-4:first-child, .col-md-5:first-child, .col-md-6:first-child, .col-md-7:first-child, .col-md-8:first-child, .col-md-9:first-child, .col-sm-1:first-child, .col-sm-10:first-child, .col-sm-11:first-child, .col-sm-12:first-child, .col-sm-2:first-child, .col-sm-3:first-child, .col-sm-4:first-child, .col-sm-5:first-child, .col-sm-6:first-child,
+  .col-sm-7:first-child, .col-sm-8:first-child, .col-sm-9:first-child, .col-xs-1:first-child, .col-xs-10:first-child, .col-xs-11:first-child, .col-xs-12:first-child, .col-xs-2:first-child, .col-xs-3:first-child, .col-xs-4:first-child, .col-xs-5:first-child, .col-xs-6:first-child, .col-xs-7:first-child, .col-xs-8:first-child, .col-xs-9:first-child {
+    margin-top: 0px;
+  }
+}
+/* line 1, ../scss/layout/_header.scss */
+header.pageHeader {
+  /*--------------------------------------------------------------
+  # Nav bar main container
+  --------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  # Border underneath the main nav background
+  --------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  # Links
+  --------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  # Image logo
+  --------------------------------------------------------------*/
+}
+/* line 5, ../scss/layout/_header.scss */
+header.pageHeader .navbar {
+  background: rgba(243, 93, 43, 0.94);
+  background: linear-gradient(rgba(243, 93, 43, 0.9), rgba(227, 67, 13, 0.9));
+  width: 80%;
+  margin: 0px auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 0px 3px #4A4848;
+}
+/* line 20, ../scss/layout/_header.scss */
+header.pageHeader .navbar-inverse {
+  border-color: #83290b;
+}
+/* line 25, ../scss/layout/_header.scss */
+header.pageHeader a {
+  text-decoration: none;
+}
+/* line 26, ../scss/layout/_header.scss */
+header.pageHeader .navbar-nav > li > a {
+  color: #fff;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+/* line 31, ../scss/layout/_header.scss */
+header.pageHeader .navbar-nav > li > a:hover {
+  background: #994118;
+  transition: background-color 0.5s ease;
+}
+/* line 36, ../scss/layout/_header.scss */
+header.pageHeader .navbar-nav > .active > a {
+  background: #83290b;
+}
+/* line 39, ../scss/layout/_header.scss */
+header.pageHeader .navbar-nav > .active > a:hover, header.pageHeader .navbar-nav > .active > a:focus {
+  background: #b3380e;
+}
+/* line 45, ../scss/layout/_header.scss */
+header.pageHeader .navbar-brand {
+  margin-left: 10px !important;
+  margin-right: 30px;
+  width: 180px;
+  padding: 4px;
+}
+/* line 49, ../scss/layout/_header.scss */
+header.pageHeader .navbar-brand img {
+  max-width: 117px;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Media queries
+--------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+  /* line 58, ../scss/layout/_header.scss */
+  header.navHdr .navbar {
+    border-radius: 0px;
+    width: 100%;
+  }
+}
+/*--------------------------------------------------------------
+# Colours and background variables
+--------------------------------------------------------------*/
+/*Orange*/
+/*--------------------------------------------------------------
+# Generic Functions
+--------------------------------------------------------------*/
+/* line 3, ../scss/layout/_footer.scss */
+footer.pageFooter {
+  border-top: 3px solid #ef6638;
+  background: #83290b;
+  color: white;
+}
+/* line 8, ../scss/layout/_footer.scss */
+footer.pageFooter h2 {
+  color: white;
+}
+
+/*--------------------------------------------------------------
+# Main blocks
+--------------------------------------------------------------*/
+/* Placeholders */
+/* line 8, ../scss/components/_blocks.scss */
+.blocks_alt_icon .col-md-4, .blocks_alt_img .col-md-4, .blocks_alt_icon .col-md-3, .blocks_alt_img .col-md-3 {
+  text-align: center;
+}
+/* line 10, ../scss/components/_blocks.scss */
+.blocks_alt_icon .col-md-4:nth-child(odd), .blocks_alt_img .col-md-4:nth-child(odd), .blocks_alt_icon .col-md-3:nth-child(odd), .blocks_alt_img .col-md-3:nth-child(odd) {
+  background: rgba(236, 236, 236, 0.94);
+}
+/* line 11, ../scss/components/_blocks.scss */
+.blocks_alt_icon .col-md-4:nth-child(even), .blocks_alt_img .col-md-4:nth-child(even), .blocks_alt_icon .col-md-3:nth-child(even), .blocks_alt_img .col-md-3:nth-child(even) {
+  background: white;
+}
+
+/* Blocks with icons */
+/* line 19, ../scss/components/_blocks.scss */
+.blocks_alt_icon .innerPad {
+  padding: 15px;
+}
+/* line 20, ../scss/components/_blocks.scss */
+.blocks_alt_icon figure {
+  margin: 0px auto;
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+  background: #ef6638;
+  color: white;
+  font-size: 2.5em;
+}
+
+/* Blocks with images */
+/* line 33, ../scss/components/_blocks.scss */
+.blocks_alt_img .innerPad {
+  padding: 7px;
+}
+
+/* line 1, ../scss/components/_buttons.scss */
+a.siteBtn1, button.siteBtn1, input[type="submit"] {
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: white !important;
+  transition: background 0.5s;
+  border: 1px solid #83290b !important;
+  background: #B4431D;
+  background: linear-gradient(to right, #b4431d 50%, #ef6638 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease;
+}
+/* line 12, ../scss/components/_buttons.scss */
+a.siteBtn1:hover, button.siteBtn1:hover, input[type="submit"]:hover {
+  background-position: left bottom !important;
+}
+/* line 16, ../scss/components/_buttons.scss */
+a.siteBtn1:active, a.siteBtn1:focus, button.siteBtn1:active, button.siteBtn1:focus, input[type="submit"]:active, input[type="submit"]:focus {
+  box-shadow: 0px 1px 4px black inset;
+}
+
+/*--------------------------------------------------------------
+# Page splitters
+--------------------------------------------------------------*/
+/* line 4, ../scss/components/_sections.scss */
+main section.pagesplit {
+  padding: 30px 0px;
+}
+
+/* line 7, ../scss/components/_sections.scss */
+section.pagesplit.top {
+  padding-top: 90px;
+}
+
+/* line 12, ../scss/components/_sections.scss */
+section.testimonial {
+  text-align: right;
+  font-size: 1.8em;
+  color: white;
+  border-bottom: 7px solid #83290b;
+  background: #ef6638;
+}
+
+/* line 4, ../scss/components/_typography.scss */
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.8em;
+}
+
+/* line 7, ../scss/components/_typography.scss */
+.h2, .h3, .h4, .h5, .h6, h2, h3, h4, h5, h6 {
+  font-family: 'Lobster', cursive;
+  color: #ef6638;
+}

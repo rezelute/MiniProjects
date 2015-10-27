@@ -1,0 +1,19 @@
+a.siteBtn1, button.siteBtn1, input[type="submit"]{
+   margin-top:15px; display:inline-block;
+   text-decoration: none;
+   color:$fore-secondary-color !important; transition: background 0.5s; border:1px solid darken($primary-color, 30%) !important;
+   
+   background:#B4431D;
+   background: linear-gradient(to right, #B4431D 50%, #EF6638 50%);
+   background-size: 200% 100%;
+   background-position:right bottom;
+   transition:all 0.5s ease;
+      
+   &:hover{
+      background-position:left bottom !important;
+   }
+   
+   &:active, &:focus{
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 1.0) inset;
+   }
+}

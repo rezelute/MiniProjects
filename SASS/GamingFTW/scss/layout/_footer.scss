@@ -1,0 +1,9 @@
+@import 'base/_helpers.scss';
+
+footer.pageFooter{
+   border-top:3px solid $primary-color;
+   background:darken($primary-color, 30%);
+   color:$fore-secondary-color;
+   
+   h2{color:$fore-secondary-color;}
+}

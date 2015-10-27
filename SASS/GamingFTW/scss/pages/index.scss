@@ -1,0 +1,80 @@
+@import 'base/_helpers.scss';
+
+
+/*--------------------------------------------------------------
+# Page banner
+--------------------------------------------------------------*/
+section.banner{
+   color:white;
+   background: /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),
+   url('../../images/watchdogs.jpg') no-repeat top center;
+   height:600px;
+   
+   .container{
+      @include verticalAlign(50%);
+   }
+   
+   h1.siteName{
+      position: relative;
+      padding-bottom: 9px; margin: 40px 0px 50px;
+      font-size: 4em; font-weight: bold; text-align: center;
+      
+      &:after{
+         content: '';
+         display: block;
+         position: absolute; left: 45%;
+         margin-top:20px;
+         width: 10%;
+         border-bottom: 3px solid #F15B29;
+      }
+   }
+   
+   h2.strapline{
+      font-size: 2.5em; text-align: center;
+      color:white;
+   }
+}
+
+/*--------------------------------------------------------------
+# Top 5 games 
+--------------------------------------------------------------*/
+section.top5ranking {   
+   font-weight:bold; color:$fore-secondary-color;
+   
+   h2{color:$fore-secondary-color; border-bottom:1px solid $fore-secondary-color;}
+   ul{padding:0px;}
+   ul li{list-style: none; padding:0px;}
+   ul li span{line-height: 51px; vertical-align: top;}
+   figure{margin-right:15px; display:inline-block; color:$fore-secondary-color; font-size:1.8em;}
+   
+   .featured img{
+      height:100%; width:100%; max-width:555px ;padding:10px; border-radius: 5px; border:1px solid darken($primary-color, 30%); background:$bg-white-color;       
+   }
+}
+
+/*--------------------------------------------------------------
+# Get our app
+--------------------------------------------------------------*/
+section.tryOurApp{
+   img{margin-bottom:-31px; width:100%; max-width:424px;}
+}
+
+
+/*--------------------------------------------------------------
+# Media queries
+--------------------------------------------------------------*/
+@media only screen and (max-width: 992px) {
+   section.tryOurApp {
+      
+      .col-md-6:nth-child(2){
+         text-align:center;
+      }
+   }
+}
+
+
+

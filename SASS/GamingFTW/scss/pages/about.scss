@@ -1,0 +1,68 @@
+@import 'base/_helpers.scss';
+
+section.aboutCompany{
+   /*--------------------------------------------------------------
+   # Left content - Carousel with images
+   --------------------------------------------------------------*/   
+   .carousel-caption{
+      background: rgba(0, 0, 0, 0.54);
+      border-radius: 6px;
+      top:-1px;
+      padding:10px 0px;
+      bottom:auto;
+   }
+   
+   /*--------------------------------------------------------------
+   # Right content - More about with bootstrap tablist
+   --------------------------------------------------------------*/   
+   .moreAbout{
+      /* Active links */
+      .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus/*, .nav-tabs > li.active > a:hover*/{
+         border-width: 1px;
+         border-style: solid;
+         border-color: rgb(167, 81, 8) rgb(167, 81, 8) transparent;
+         background:$primary-color;
+         color:$fore-secondary-color;
+      }
+      /* Inactive links */
+      .nav-tabs > li > a{
+         text-decoration: none;
+         color:$primary-color;
+         
+         &:hover{
+            text-decoration: underline;
+         }
+      }
+      /* Content pane */
+      .tab-pane{
+         color:$fore-secondary-color;
+         background:$primary-color;
+         font-size: 0.8em;
+         padding:10px;
+      }
+   }
+}
+
+/*--------------------------------------------------------------
+# Testimonial area
+--------------------------------------------------------------*/  
+section.testimonial{
+   q{line-height: 42.1px;
+   
+      &:before, &:after{
+         font-size:2em;
+         vertical-align: middle;
+      }
+      &:before{margin-right:10px;}
+      &:after{margin-left:10px;}
+   }
+
+   .quoteBox{
+      border-right:5px solid $bg-white-color;
+      padding-right:25px;
+   }
+   footer{
+      font-style: italic;
+      font-size:0.6em;
+   }
+}
