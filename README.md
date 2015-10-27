@@ -1,1 +1,1 @@
-This repository is for example SASS projects.
+This repository is for mini projects practising various languages like SASS, C#, CSS, HTML etc.
